@@ -39,7 +39,7 @@ def part2():
         return abs(visited[-1][0]) + abs(visited[-1][1])
 
 
-with open("input1.txt") as f:
+with open("input.txt") as f:
     lines = f.readlines()
 
 coms = lines[0].split(", ")

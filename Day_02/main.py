@@ -28,7 +28,7 @@ def result(grid, pos):
     return code
 
 
-with open("input2.txt") as f:
+with open("input.txt") as f:
     lines = f.readlines()
 
 pos = (2, 2)
