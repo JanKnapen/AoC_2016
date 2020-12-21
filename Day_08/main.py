@@ -31,9 +31,24 @@ def part1():
     return int(count)
 
 
+def part2():
+    for y in range(on.shape[0]):
+        line = ""
+        for x in range(on.shape[1]):
+            if on[y][x] == 1:
+                line += "#"
+            else:
+                line += "."
+            if x % 5 == 4:
+                line += " "
+        print(line)
+
+
 with open("input.txt") as f:
     lines = f.readlines()
 
 on = np.zeros((6, 50))
 
 print("Answer part 1:", part1())
+print("Answer part 2:")
+part2()
